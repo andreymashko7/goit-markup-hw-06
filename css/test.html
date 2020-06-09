@@ -16,14 +16,28 @@
   </head>
 
   <body>
-    <label for="branch">Отделение:</label>
-    <input type="text" name="branch" id="branch" list="codes" />
+    <button data-modal-open>Открыть модальное окно</button>
 
-    <datalist id="codes">
-      <option value="3600">Шевченковский район</option>
-      <option value="7493">Железоугорский район</option>
-      <option value="2701">Центральный район</option>
-      <option value="5692">Зелёногорский район</option>
-    </datalist>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
+          non accusamus velit quidem, consequuntur eius reiciendis
+          exercitationem pariatur dolor possimus sit maiores dignissimos earum
+          tempora facere. Provident accusantium saepe consectetur voluptates,
+          ratione deserunt tenetur suscipit delectus rerum doloremque nostrum
+          dolore eaque ut hic ducimus distinctio repellat quas dicta numquam
+          inventore temporibus. Repudiandae, distinctio. Iste officiis est
+          officia, aperiam soluta dolorem provident adipisci tempora odit rem
+          vero maiores molestiae exercitationem facilis voluptatibus fugit
+          necessitatibus asperiores! Incidunt eveniet eaque et, sunt laboriosam
+          asperiores quod ullam impedit non exercitationem, qui saepe dolorem
+          molestiae. Fugiat enim perspiciatis saepe. Eius minima maiores illo
+          rerum numquam?
+        </p>
+        <button data-modal-close>Закрыть</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
