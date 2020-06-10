@@ -67,7 +67,21 @@
       <section class="hero">
         <div class="container-hero">
           <h1 class="hero-title">эффективные решения для вашего бизнеса</h1>
-          <a href="#" class="hero-button">Заказать услугу</a>
+          <!-- <a href="#" class="hero-button">Заказать услугу</a> -->
+          <button class="hero-button" data-modal-open>Заказать услугу</button>
+        </div>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Similique illo accusamus corrupti id enim, odit repellendus nemo
+              veniam totam iure hic debitis commodi perferendis autem ut
+              voluptate natus impedit molestiae. Sed id cumque tempora deleniti
+              ea et accusamus a, commodi laudantium ex ducimus provident sequi
+              nostrum molestiae. Necessitatibus, ut nostrum?
+            </p>
+            <button data-modal-close>Закрыть</button>
+          </div>
         </div>
       </section>
 
@@ -139,22 +153,40 @@
           <h2 class="exampls-title">Чем мы занимаемся</h2>
           <ul class="list exampls-box">
             <li class="item">
-               <div class="product-thumb">
-                  <img class="img" src="./images/img-9.jpg" alt="Ноутбук" width="370" height="294" />
-                  <h3 class="exampls-text">Десктопные приложения</h3>
-               </div>
+              <div class="product-thumb">
+                <img
+                  class="img"
+                  src="./images/img-9.jpg"
+                  alt="Ноутбук"
+                  width="370"
+                  height="294"
+                />
+                <h3 class="exampls-text">Десктопные приложения</h3>
+              </div>
             </li>
 
             <li class="item">
               <div class="product-thumb">
-                <img class="img" src="./images/box--20.jpg" alt="мобильные приложения" width="370" height="294" />
+                <img
+                  class="img"
+                  src="./images/box--20.jpg"
+                  alt="мобильные приложения"
+                  width="370"
+                  height="294"
+                />
                 <h3 class="exampls-text">Мобильные приложения</h3>
               </div>
             </li>
 
             <li class="item">
               <div class="product-thumb">
-                <img class="img" src="./images/img-6.jpg" alt="дизайнерские решения" width="370" height="294" />
+                <img
+                  class="img"
+                  src="./images/img-6.jpg"
+                  alt="дизайнерские решения"
+                  width="370"
+                  height="294"
+                />
                 <h3 class="exampls-text">Дизайнерские решения</h3>
               </div>
             </li>
@@ -183,30 +215,43 @@
                 <p class="team-work">Product Designer</p>
                 <ul class="social list">
                   <li class="item">
-                    <a href="https://www.instagram.com/" class="link-social person" aria-label="ссылка на инстаграм">
+                    <a
+                      href="https://www.instagram.com/"
+                      class="link-social person"
+                      aria-label="ссылка на инстаграм"
+                    >
                       <svg class="icon-insta" width="20" height="20">
                         <use href="./images/sprite.svg#instagram2"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="item">
-                    <a href="https://twitter.com/" class="link-social person" aria-label="ссылка на твитер"><svg class="icon-twit"
-                        width="20" height="16">
+                    <a
+                      href="https://twitter.com/"
+                      class="link-social person"
+                      aria-label="ссылка на твитер"
+                      ><svg class="icon-twit" width="20" height="16">
                         <use href="./images/sprite.svg#twitter1"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="item">
-                    <a href="https://www.facebook.com/" class="link-social person" aria-label="ссылка на фейсбук"><svg
-                        class="icon-facebook" width="20" height="20">
-                        <use href="./images/sprite.svg#facebook1"></use>
-                      </svg></a>
+                    <a
+                      href="https://www.facebook.com/"
+                      class="link-social person"
+                      aria-label="ссылка на фейсбук"
+                      ><svg class="icon-facebook" width="20" height="20">
+                        <use href="./images/sprite.svg#facebook1"></use></svg
+                    ></a>
                   </li>
                   <li class="item">
-                    <a href="https://www.linkedin.com/" class="link-social person" aria-label="ссылка на линкидин"><svg
-                        class="icon-linkidn" width="20" height="20">
-                        <use href="./images/sprite.svg#linkedin1"></use>
-                      </svg></a>
+                    <a
+                      href="https://www.linkedin.com/"
+                      class="link-social person"
+                      aria-label="ссылка на линкидин"
+                      ><svg class="icon-linkidn" width="20" height="20">
+                        <use href="./images/sprite.svg#linkedin1"></use></svg
+                    ></a>
                   </li>
                 </ul>
               </div>
@@ -227,31 +272,43 @@
                 <p class="team-work">Frontend Developer</p>
                 <ul class="social list">
                   <li class="item">
-                    <a href="https://www.instagram.com/" class="link-social person" aria-label="ссылка на инстаграм">
+                    <a
+                      href="https://www.instagram.com/"
+                      class="link-social person"
+                      aria-label="ссылка на инстаграм"
+                    >
                       <svg class="icon-insta" width="20" height="20">
                         <use href="./images/sprite.svg#instagram2"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="item">
-                    <a href="https://twitter.com/" class="link-social person" aria-label="ссылка на твитер"><svg class="icon-twit" width="20"
-                        height="16">
+                    <a
+                      href="https://twitter.com/"
+                      class="link-social person"
+                      aria-label="ссылка на твитер"
+                      ><svg class="icon-twit" width="20" height="16">
                         <use href="./images/sprite.svg#twitter1"></use>
                       </svg>
                     </a>
-                  
                   </li>
                   <li class="item">
-                    <a href="https://www.facebook.com/" class="link-social person" aria-label="ссылка на фейсбук"><svg class="icon-facebook"
-                        width="20" height="20">
-                        <use href="./images/sprite.svg#facebook1"></use>
-                      </svg></a>
+                    <a
+                      href="https://www.facebook.com/"
+                      class="link-social person"
+                      aria-label="ссылка на фейсбук"
+                      ><svg class="icon-facebook" width="20" height="20">
+                        <use href="./images/sprite.svg#facebook1"></use></svg
+                    ></a>
                   </li>
                   <li class="item">
-                    <a href="https://www.linkedin.com/" class="link-social person" aria-label="ссылка на линкидин"><svg class="icon-linkidn"
-                        width="20" height="20">
-                        <use href="./images/sprite.svg#linkedin1"></use>
-                      </svg></a>
+                    <a
+                      href="https://www.linkedin.com/"
+                      class="link-social person"
+                      aria-label="ссылка на линкидин"
+                      ><svg class="icon-linkidn" width="20" height="20">
+                        <use href="./images/sprite.svg#linkedin1"></use></svg
+                    ></a>
                   </li>
                 </ul>
               </div>
@@ -272,31 +329,43 @@
                 <p class="team-work">Marketing</p>
                 <ul class="social list">
                   <li class="item">
-                    <a href="https://www.instagram.com/" class="link-social person" aria-label="ссылка на инстаграм">
+                    <a
+                      href="https://www.instagram.com/"
+                      class="link-social person"
+                      aria-label="ссылка на инстаграм"
+                    >
                       <svg class="icon-insta" width="20" height="20">
                         <use href="./images/sprite.svg#instagram2"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="item">
-                    <a href="https://twitter.com/" class="link-social person" aria-label="ссылка на твитер"><svg class="icon-twit" width="20"
-                        height="16">
+                    <a
+                      href="https://twitter.com/"
+                      class="link-social person"
+                      aria-label="ссылка на твитер"
+                      ><svg class="icon-twit" width="20" height="16">
                         <use href="./images/sprite.svg#twitter1"></use>
                       </svg>
                     </a>
-                    
                   </li>
                   <li class="item">
-                    <a href="https://www.facebook.com/" class="link-social person" aria-label="ссылка на фейсбук"><svg class="icon-facebook"
-                        width="20" height="20">
-                        <use href="./images/sprite.svg#facebook1"></use>
-                      </svg></a>
+                    <a
+                      href="https://www.facebook.com/"
+                      class="link-social person"
+                      aria-label="ссылка на фейсбук"
+                      ><svg class="icon-facebook" width="20" height="20">
+                        <use href="./images/sprite.svg#facebook1"></use></svg
+                    ></a>
                   </li>
                   <li class="item">
-                    <a href="https://www.linkedin.com/" class="link-social person" aria-label="ссылка на линкидин"><svg class="icon-linkidn"
-                        width="20" height="20">
-                        <use href="./images/sprite.svg#linkedin1"></use>
-                      </svg></a>
+                    <a
+                      href="https://www.linkedin.com/"
+                      class="link-social person"
+                      aria-label="ссылка на линкидин"
+                      ><svg class="icon-linkidn" width="20" height="20">
+                        <use href="./images/sprite.svg#linkedin1"></use></svg
+                    ></a>
                   </li>
                 </ul>
               </div>
@@ -317,31 +386,43 @@
                 <p class="team-work">Marketing</p>
                 <ul class="social list">
                   <li class="item">
-                    <a href="https://www.instagram.com/" class="link-social person" aria-label="ссылка на инстаграм">
+                    <a
+                      href="https://www.instagram.com/"
+                      class="link-social person"
+                      aria-label="ссылка на инстаграм"
+                    >
                       <svg class="icon-insta" width="20" height="20">
                         <use href="./images/sprite.svg#instagram2"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="item">
-                    <a href="https://twitter.com/" class="link-social person" aria-label="ссылка на твитер"><svg class="icon-twit" width="20"
-                        height="16">
+                    <a
+                      href="https://twitter.com/"
+                      class="link-social person"
+                      aria-label="ссылка на твитер"
+                      ><svg class="icon-twit" width="20" height="16">
                         <use href="./images/sprite.svg#twitter1"></use>
                       </svg>
                     </a>
-                  
                   </li>
                   <li class="item">
-                    <a href="https://www.facebook.com/" class="link-social person" aria-label="ссылка на фейсбук"><svg class="icon-facebook"
-                        width="20" height="20">
-                        <use href="./images/sprite.svg#facebook1"></use>
-                      </svg></a>
+                    <a
+                      href="https://www.facebook.com/"
+                      class="link-social person"
+                      aria-label="ссылка на фейсбук"
+                      ><svg class="icon-facebook" width="20" height="20">
+                        <use href="./images/sprite.svg#facebook1"></use></svg
+                    ></a>
                   </li>
                   <li class="item">
-                    <a href="https://www.linkedin.com/" class="link-social person" aria-label="ссылка на линкидин"><svg class="icon-linkidn"
-                        width="20" height="20">
-                        <use href="./images/sprite.svg#linkedin1"></use>
-                      </svg></a>
+                    <a
+                      href="https://www.linkedin.com/"
+                      class="link-social person"
+                      aria-label="ссылка на линкидин"
+                      ><svg class="icon-linkidn" width="20" height="20">
+                        <use href="./images/sprite.svg#linkedin1"></use></svg
+                    ></a>
                   </li>
                 </ul>
               </div>
@@ -437,7 +518,8 @@
           <ul class="social list">
             <li class="item">
               <a
-                href="https://www.instagram.com/" class="link-social"
+                href="https://www.instagram.com/"
+                class="link-social"
                 aria-label="ссылка на инстаграм"
               >
                 <svg class="icon-insta" width="20" height="20">
@@ -446,40 +528,48 @@
               </a>
             </li>
             <li class="item">
-              <a href="https://twitter.com/" class="link-social" aria-label="ссылка на твитер"
+              <a
+                href="https://twitter.com/"
+                class="link-social"
+                aria-label="ссылка на твитер"
                 ><svg class="icon-twit" width="20" height="16">
                   <use href="./images/sprite.svg#twitter1"></use>
                 </svg>
-                </a>
-            </li>
-            <li class="item">
-              <a href="https://www.facebook.com/" class="link-social" aria-label="ссылка на фейсбук"
-                ><svg class="icon-facebook" width="20" height="20">
-                  <use href="./images/sprite.svg#facebook1"></use>
-                </svg></a>
+              </a>
             </li>
             <li class="item">
               <a
-                href="https://www.linkedin.com/" class="link-social"
+                href="https://www.facebook.com/"
+                class="link-social"
+                aria-label="ссылка на фейсбук"
+                ><svg class="icon-facebook" width="20" height="20">
+                  <use href="./images/sprite.svg#facebook1"></use></svg
+              ></a>
+            </li>
+            <li class="item">
+              <a
+                href="https://www.linkedin.com/"
+                class="link-social"
                 aria-label="ссылка на линкидин"
                 ><svg class="icon-linkidn" width="20" height="20">
-                  <use href="./images/sprite.svg#linkedin1"></use>
-                </svg></a>
+                  <use href="./images/sprite.svg#linkedin1"></use></svg
+              ></a>
             </li>
           </ul>
         </div>
 
         <div class="box-button">
           <b class="button-text">Подпишитесь на рассылку</b>
-          <button type="button" class="button-second">Подписаться 
+          <button type="button" class="button-second">
+            Подписаться
             <svg class="air-icon" width="24" height="24">
               <use href="./images/sprite.svg#airbus"></use>
             </svg>
           </button>
-          
         </div>
       </div>
       <p class="container copyright">2020 | Developed by GoIT Students</p>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
