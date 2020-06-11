@@ -16,15 +16,33 @@
   </head>
 
   <body>
-    <form class="js-speaker-form" autocomplete="">
-      <label for="name">Имя</label>
-      <input type="text" name="name" id="name" autofocus />
+    <form class="form js-speaker-form" autocomplete="">
+      <div class="form-field">
+        <label for="name" class="form-label">Имя</label>
+        <input
+          class="form-input"
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Иван Иваныч"
+          autofocus
+        />
+      </div>
 
-      <label for="tel">Телефон</label>
-      <input type="tel" name="tel" id="tel" />
+      <div class="form-field">
+        <label for="tel">Телефон</label>
+        <input type="tel" name="tel" id="tel" placeholder="+3800*******" />
+      </div>
 
-      <label for="mail">Почта</label>
-      <input type="email" name="mail" id="mail" />
+      <div class="form-field">
+        <label for="mail">Почта</label>
+        <input
+          type="email"
+          name="mail"
+          id="mail"
+          placeholder="exampl@.mail.com"
+        />
+      </div>
 
       <div role="group">
         <input type="checkbox" name="topic" value="html" id="html" />
@@ -55,7 +73,12 @@
       <input type="file" name="pdf" id="pdf" />
 
       <label for="comment">Оставьте коментарий</label>
-      <textarea name="comment" id="comment" rows="8"></textarea>
+      <textarea
+        name="comment"
+        placeholder="Оставьте коментарий"
+        id="comment"
+        rows="8"
+      ></textarea>
 
       <input type="checkbox" name="" id="policy" />
       <label for="policy">Соглашаюсь на все </label>
