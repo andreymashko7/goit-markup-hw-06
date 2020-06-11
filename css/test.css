@@ -13,14 +13,60 @@ textarea {
 .form-field {
   display: flex;
   flex-direction: column;
-  outline: 1px solid teal;
+  /* outline: 1px solid teal; */
   margin-bottom: 20px;
 }
 
 .form-field input {
   margin: 0;
-  padding: 6px 10px;
+  padding: 10px 20px;
+  border-radius: 3px;
+  border: 1px solid #2a2a2a;
+  font-size: 20px;
 }
 .form-field label {
   margin-bottom: 5px;
+}
+
+.form-field input::placeholder {
+  color: tomato;
+}
+
+.group {
+  margin-bottom: 20px;
+}
+
+.group-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.topic-options,
+.experience-options {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.topic-options input[type='checkbox'] {
+}
+
+.topic-options li {
+  display: flex;
+  align-items: center;
+}
+
+.topic-options label {
+  font-style: 20px;
+  margin-left: 10px;
+}
+
+.date {
+  background-color: red;
+  padding: 10px 20px;
+  border-radius: 2px;
+}
+
+.comment {
+  padding: 9px;
 }

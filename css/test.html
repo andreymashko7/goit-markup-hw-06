@@ -44,44 +44,74 @@
         />
       </div>
 
-      <div role="group">
-        <input type="checkbox" name="topic" value="html" id="html" />
-        <label for="html">HTML</label>
+      <div role="group" class="group">
+        <h2 class="group-title">Тема доклада</h2>
+        <ul class="topic-options">
+          <li>
+            <input type="checkbox" name="topic" value="html" id="html" />
+            <label for="html">HTML</label>
+          </li>
 
-        <input type="checkbox" name="topic" value="css" id="css" />
-        <label for="css">CSS</label>
+          <li>
+            <input type="checkbox" name="topic" value="css" id="css" />
+            <label for="css">CSS</label>
+          </li>
 
-        <input type="checkbox" name="topic" value="js" id="jsl" />
-        <label for="js">JS</label>
+          <li>
+            <input type="checkbox" name="topic" value="js" id="jsl" />
+            <label for="js">JS</label>
+          </li>
+        </ul>
       </div>
 
-      <div role="group">
-        <input type="radio" name="expirience" value="junior" id="junior" />
-        <label for="junior">Junior</label>
+      <div role="group" class="group">
+        <h2>Уровень вашей экспертизы</h2>
 
-        <input type="radio" name="expirience" value="middle" id="middle" />
-        <label for="middle">Middle</label>
+        <ul class="experience-options">
+          <li>
+            <input type="radio" name="expirience" value="junior" id="junior" />
+            <label for="junior">Junior</label>
+          </li>
 
-        <input type="radio" name="expirience" value="senior" id="senior" />
-        <label for="senior">Senior</label>
+          <li>
+            <input type="radio" name="expirience" value="middle" id="middle" />
+            <label for="middle">Middle</label>
+          </li>
+
+          <li>
+            <input type="radio" name="expirience" value="senior" id="senior" />
+            <label for="senior">Senior</label>
+          </li>
+        </ul>
       </div>
 
-      <input type="datetime-local" name="date" id="date" />
-      <label for="date">Дата доклада</label>
+      <div class="form-field">
+        <input type="datetime-local" name="date" id="date" class="date" />
+        <label for="date">Дата доклада</label>
+      </div>
+      <div class="form-field">
+        <label for="pdf">Загрузите копию доклада в пдф</label>
+        <input type="file" name="pdf" id="pdf" />
+      </div>
 
-      <label for="pdf">Загрузите копию доклада в пдф</label>
-      <input type="file" name="pdf" id="pdf" />
+      <div class="form-field">
+        <label for="comment">Оставьте коментарий</label>
+      </div>
 
-      <label for="comment">Оставьте коментарий</label>
-      <textarea
-        name="comment"
-        placeholder="Оставьте коментарий"
-        id="comment"
-        rows="8"
-      ></textarea>
+      <div class="form-field">
+        <textarea
+          class="comment"
+          name="comment"
+          placeholder="Оставьте коментарий"
+          id="comment"
+          rows="8"
+        ></textarea>
+      </div>
 
-      <input type="checkbox" name="" id="policy" />
-      <label for="policy">Соглашаюсь на все </label>
+      <div class="form-field">
+        <input type="checkbox" name="" id="policy" />
+        <label for="policy">Соглашаюсь на все </label>
+      </div>
 
       <button type="submit">Отправить заявку</button>
     </form>
