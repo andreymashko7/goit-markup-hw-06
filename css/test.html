@@ -16,25 +16,34 @@
   </head>
 
   <body>
-    <form class="form js-speaker-form" autocomplete="">
+    <form class="form" autocomplete="off">
       <div class="form-field">
-        <label for="name" class="form-label">Имя</label>
         <input
           class="form-input"
           type="text"
           name="name"
           id="name"
-          placeholder="Иван Иваныч"
-          autofocus
+          placeholder=" "
         />
+        <label for="name" class="form-label">Имя</label>
+        <span class="icon"></span>
       </div>
 
       <div class="form-field">
-        <label for="tel">Телефон</label>
-        <input type="tel" name="tel" id="tel" placeholder="+3800*******" />
+        <input
+          type="tel"
+          class="form-input"
+          name="tel"
+          id="tel"
+          placeholder=" "
+        />
+        <label for="tel" class="form-label">Телефон</label>
+        <span class="icon"></span>
       </div>
 
-      <div class="form-field">
+      <button type="submit">Оставить заявку</button>
+
+      <!-- <div class="form-field">
         <label for="mail">Почта</label>
         <input
           type="email"
@@ -42,9 +51,9 @@
           id="mail"
           placeholder="exampl@.mail.com"
         />
-      </div>
+      </div> -->
 
-      <div role="group" class="group">
+      <!-- <div role="group" class="group">
         <h2 class="group-title">Тема доклада</h2>
         <ul class="topic-options">
           <li>
@@ -62,9 +71,9 @@
             <label for="js">JS</label>
           </li>
         </ul>
-      </div>
+      </div> -->
 
-      <div role="group" class="group">
+      <!-- <div role="group" class="group">
         <h2>Уровень вашей экспертизы</h2>
 
         <ul class="experience-options">
@@ -83,9 +92,9 @@
             <label for="senior">Senior</label>
           </li>
         </ul>
-      </div>
+      </div> -->
 
-      <div class="form-field">
+      <!-- <div class="form-field">
         <input type="datetime-local" name="date" id="date" class="date" />
         <label for="date">Дата доклада</label>
       </div>
@@ -113,7 +122,7 @@
         <label for="policy">Соглашаюсь на все </label>
       </div>
 
-      <button type="submit">Отправить заявку</button>
+      <button type="submit">Отправить заявку</button> -->
     </form>
 
     <script>
