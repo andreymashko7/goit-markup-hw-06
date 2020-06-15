@@ -67,19 +67,45 @@
       <section class="hero">
         <div class="container-hero">
           <h1 class="hero-title">эффективные решения для вашего бизнеса</h1>
-          <!-- <a href="#" class="hero-button">Заказать услугу</a> -->
           <button class="hero-button" data-modal-open>Заказать услугу</button>
         </div>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Similique illo accusamus corrupti id enim, odit repellendus nemo
-              veniam totam iure hic debitis commodi perferendis autem ut
-              voluptate natus impedit molestiae. Sed id cumque tempora deleniti
-              ea et accusamus a, commodi laudantium ex ducimus provident sequi
-              nostrum molestiae. Necessitatibus, ut nostrum?
-            </p>
+            <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
+            <form class="modal-form" autocomplete="off">
+              <div class="modal-field">
+                <label class="modal-label"
+                  ><input
+                    type="text"
+                    class="modal-input"
+                    name="name"
+                    placeholder="Имя"
+                /></label>
+              </div>
+              <div class="modal-field">
+                <label class="modal-label"
+                  ><input
+                    type="text"
+                    class="modal-input"
+                    name="mobile"
+                    placeholder="Телефон"
+                /></label>
+              </div>
+              <div class="modal-field">
+                <label class="modal-label"
+                  ><input
+                    type="text"
+                    class="modal-input"
+                    name="mail"
+                    placeholder="Почта"
+                /></label>
+              </div>
+              <div class="modal-field">
+                <label class="modal-label"
+                  ><input type="textarea" class="modal-input" name="comment"
+                /></label>
+              </div>
+            </form>
             <button data-modal-close>Закрыть</button>
           </div>
         </div>
@@ -560,12 +586,23 @@
 
         <div class="box-button">
           <b class="button-text">Подпишитесь на рассылку</b>
-          <button type="button" class="button-second">
-            Подписаться
-            <svg class="air-icon" width="24" height="24">
-              <use href="./images/sprite.svg#airbus"></use>
-            </svg>
-          </button>
+          <div class="footer-flex">
+            <form class="footer-form">
+              <label class="footer-label"
+                ><input
+                  type="text"
+                  class="footer-input"
+                  name="text"
+                  placeholder="E-mail"
+              /></label>
+            </form>
+            <button type="button" class="button-second">
+              Подписаться
+              <svg class="air-icon" width="24" height="24">
+                <use href="./images/sprite.svg#airbus"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
       <p class="container copyright">2020 | Developed by GoIT Students</p>

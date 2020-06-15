@@ -1,4 +1,4 @@
-.form {
+/* /* .form {
   padding: 20px;
   margin: 20px;
   width: 600px;
@@ -6,6 +6,7 @@
 
 .form-field {
   position: relative;
+  display: block;
   margin-bottom: 35px;
 }
 
@@ -16,21 +17,16 @@
 
   transform: translateY(-50%);
   transition: transform 250ms linear;
-}
+} */
 
-.form-input {
+/* .form-input {
   width: 100%;
+
   margin: 0;
-  padding: 10px 20px;
+  padding: 10px 40px;
   font: inherit;
   border-radius: 3px;
   border: 1px solid #2a2a2a;
-}
-
-.form-input:focus + .form-label,
-.form-input:not(:placeholder-shown) + .form-label {
-  transform: translateY(-50px);
-  color: tomato;
 }
 
 .icon {
@@ -43,6 +39,64 @@
   background-color: tomato;
 }
 
-.form-input:focus ~ .icon {
+.form-field:focus-within > .icon {
   background-color: blue;
 }
+
+.form-field:focus-within > .form-label {
+  transform: translateY(-50px);
+}
+
+.form-input:not(:placeholder-shown) + .form-label {
+  transform: translateY(-50px);
+} */
+
+.checkbox {
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; */
+}
+
+/* .icon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+.checkbox:checked + .icon {
+}
+.label {
+  display: inline-block;
+} */
+
+/* .button {
+  color: red;
+}
+
+.button:hover {
+  color: blue;
+}
+
+.button .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.button .icon:hover {
+  width: 50px;
+  height: 50px;
+}
+
+.button .label {
+  font-size: 16px;
+}
+
+.button:hover .icon {
+  bbackground-color: teal;
+}
+
+.button:hover .label {
+  font-size: 20px;
+}  */
