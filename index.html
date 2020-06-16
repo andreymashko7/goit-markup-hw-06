@@ -71,49 +71,74 @@
         </div>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
+            <button data-modal-close class="modal-close">
+              <svg class="icon-close" width="18" height="18">
+                <use href="./images/sprite.svg#close"></use>
+              </svg>
+            </button>
             <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
             <form class="modal-form" autocomplete="off">
               <div class="modal-field">
                 <svg class="modal-icon" width="18" height="18">
                   <use href="./images/sprite.svg#person"></use>
                 </svg>
+                <input
+                  type="text"
+                  class="modal-input"
+                  name="name"
+                  id="name"
+                  placeholder=" "
+                />
                 <label for="name" class="modal-label">Имя</label>
-                <input type="text" class="modal-input" name="name" id="name" />
               </div>
 
               <div class="modal-field">
                 <svg class="modal-icon" width="18" height="18">
                   <use href="./images/sprite.svg#phone"></use>
                 </svg>
-                <label for="mobile" class="modal-label">Телефон</label>
                 <input
                   type="text"
                   class="modal-input"
                   name="mobile"
                   id="mobile"
+                  placeholder=" "
                 />
+                <label for="mobile" class="modal-label">Телефон</label>
               </div>
+
               <div class="modal-field">
                 <svg class="modal-icon" width="18" height="18">
                   <use href="./images/sprite.svg#email"></use>
                 </svg>
+                <input
+                  type="text"
+                  class="modal-input"
+                  name="mail"
+                  id="mail"
+                  placeholder=" "
+                />
                 <label for="mail" class="modal-label">Почта</label>
-                <input type="text" class="modal-input" name="mail" id="mail" />
               </div>
 
               <div class="modal-field">
-                <label for="comment" class="modal-label"
-                  >Коментарий
-                  <textarea
-                    name="comment"
-                    class="modal-input"
-                    rows="5"
-                    id="comment"
-                  ></textarea>
-                </label>
+                <textarea
+                  name="comment"
+                  class="modal-textarea"
+                  id="comment"
+                  rows="5"
+                  placeholder=" "
+                ></textarea>
+                <label class="label-textarea" for="comment">Коментарий</label>
               </div>
+
+              <label class="checkbox-label"
+                ><input type="checkbox" class="checkbox-input" name="topic" />
+                <span class="checkbox-icon"></span>
+                Соглашаюсь с рассылкой и принимаю
+                <a class="policy" href="#"> Условия договора</a></label
+              >
             </form>
-            <button data-modal-close>Закрыть</button>
+            <button data-modal-close class="modal-button">Закрыть</button>
           </div>
         </div>
       </section>
@@ -152,7 +177,7 @@
 
             <li class="item-box">
               <div class="icon-box">
-                <svg class="icon-computer" width="70" height="54">
+                <svg class="icon-computer" width="70" height="70">
                   <use href="./images/sprite.svg#diagram1"></use>
                 </svg>
               </div>
@@ -274,8 +299,9 @@
                       class="link-social person"
                       aria-label="ссылка на фейсбук"
                       ><svg class="icon-facebook" width="20" height="20">
-                        <use href="./images/sprite.svg#facebook1"></use></svg
-                    ></a>
+                        <use href="./images/sprite.svg#facebook1"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="item">
                     <a
@@ -283,8 +309,9 @@
                       class="link-social person"
                       aria-label="ссылка на линкидин"
                       ><svg class="icon-linkidn" width="20" height="20">
-                        <use href="./images/sprite.svg#linkedin1"></use></svg
-                    ></a>
+                        <use href="./images/sprite.svg#linkedin1"></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -594,10 +621,10 @@
         <div class="box-button">
           <b class="button-text">Подпишитесь на рассылку</b>
           <div class="footer-flex">
-            <form class="footer-form">
+            <form class="footer-form" autocomplete="off">
               <label class="footer-label"
                 ><input
-                  type="text"
+                  type="email"
                   class="footer-input"
                   name="text"
                   placeholder="E-mail"

@@ -315,7 +315,7 @@
                 <p class="contacts-text">г. Киев, пр-т Леси Украинки, 26</p>
               </li>
               <li>
-                <a href="mailto:info@devstudio.com" class="contacts-link"
+                <a href="mailto:info@devstudio.com" class="contacts-link footer"
                   >info@devstudio.com</a
                 >
               </li>
@@ -375,10 +375,27 @@
 
         <div class="box-button">
           <b class="button-text">Подпишитесь на рассылку</b>
-          <button type="button" class="button-second">Подписаться</button>
+          <div class="footer-flex">
+            <form class="footer-form" autocomplete="off">
+              <label class="footer-label"
+                ><input
+                  type="email"
+                  class="footer-input"
+                  name="text"
+                  placeholder="E-mail"
+              /></label>
+            </form>
+            <button type="button" class="button-second">
+              Подписаться
+              <svg class="air-icon" width="24" height="24">
+                <use href="./images/sprite.svg#airbus"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
       <p class="container copyright">2020 | Developed by GoIT Students</p>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
